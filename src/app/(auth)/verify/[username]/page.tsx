@@ -44,7 +44,7 @@ export default function VerifyAccount() {
       toast({
         title: 'Verification Failed',
         description:
-          axiosError.response?.data.message ??
+          axiosError.response?.data.message ||
           'An error occurred. Please try again.',
         variant: 'destructive',
       });
